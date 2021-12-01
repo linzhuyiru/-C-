@@ -1,0 +1,28 @@
+//1.输入3个字符，然后按输入的顺序输出这3个字符，并一次输出它们的代码值（ASCII）最后，按与输入字符相反的次序输出这三个字符
+#include <stdio.h>
+int main(void)
+{
+    char a,b,c;
+    a=getchar();
+    b=getchar();
+    c=getchar();
+    printf("%c %c %c\n",a,b,c);
+    printf("%d %d %d\n",a,b,c);
+    printf("%c %c %c\n",c,b,a);
+    return 0;
+}
+
+//2.已知三角形的三边a，b,c，求三角形面积。
+#include <stdio.h>
+#include <math.h>
+int main(void)
+{
+    float a,b,c;
+    double p,s;
+    printf("请输入三角形三边的值：");
+    scanf("%f %f %f",&a,&b,&c);
+    p=(a+b+c)/2;
+    s=sqrt(p*(p-a)*(p-b)*(p-c));
+    printf("三角形的面积为：%.1f\n",s);
+    return 0;
+}
